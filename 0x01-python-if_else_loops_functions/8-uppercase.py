@@ -1,17 +1,7 @@
-#!/usr/bin/python3
-
-def islower(c):
-    if ord(c) >= 97 and ord(c) <= 122:
-        return True
+def print_last_digit(number):
+    if number >= 0:
+        last_digit = number % 10
     else:
-        return False
+        last_digit = (number * -1) % 10
 
-
-def uppercase(s):
-    output = ""
-    for i in range(len(s)):
-        if islower(s[i]):
-            output += chr(ord(s[i]) - 32)
-        else:
-            output += s[i]
-    print("{}".format(output))
+    return last_digit
