@@ -5,12 +5,12 @@ def islower(c):
         return True
     else:
         return False
-    
+
 def uppercase(s):
     output = ""
     for i in range(len(s)):
         if islower(s[i]):
-            output += chr(ord(s[i]) - 32)  # Fixed this line
+            output += chr(ord(s[i]) - 32)
         else:
-            output += s[i]  # Fixed this line
+            output += s[i]
     print("{}".format(output))
