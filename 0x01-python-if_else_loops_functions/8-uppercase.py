@@ -6,6 +6,7 @@ def islower(c):
     else:
         return False
 
+
 def uppercase(s):
     output = ""
     for i in range(len(s)):
