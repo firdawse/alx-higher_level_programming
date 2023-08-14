@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def print_reversed_list_string(my_list=[]):
+def print_reversed_list_integer(my_list=[]):
     if isinstance(my_list, list):
-        for e in reversed(my_list):
-            print("{}".format(e))
+        for n in reversed(my_list):
+            print("{:d}".format(n))
