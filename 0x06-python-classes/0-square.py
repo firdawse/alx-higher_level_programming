@@ -2,8 +2,13 @@
 
 """Square Class"""
 
+
 class Square:
     """no attributes"""
+
     def __init__(self):
-        """empty class"""
+        """
+        Args:
+            self: used to initiate Square instance
+        """
         pass
