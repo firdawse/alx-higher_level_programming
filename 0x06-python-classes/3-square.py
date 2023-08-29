@@ -6,7 +6,6 @@
 class Square:
     """Square attributesand methods"""
 
-    __size = 0
 
     def __init__(self, size=0):
         """
