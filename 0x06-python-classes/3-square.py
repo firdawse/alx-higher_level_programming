@@ -24,5 +24,5 @@ class Square:
 	"""
         Return: area of Square 
         """
-        return pow(self.size, 2)
+        return self.size * self.size
 
