@@ -4,14 +4,14 @@
 
 
 class Square:
-    """one attribute"""
+    """one private attribute"""
 
-	__size = 0
+    __size = 0
 
-    def __init__(self,size):
+    def __init__(self, size):
         """
         Args:
-            self: used to initiate Square instance
-			size (int): private instance attribute
+            self: used to initiate Square instances
+            size (int): size of Square
         """
         self.__size = size
