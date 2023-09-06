@@ -62,4 +62,4 @@ class Rectangle:
                 rect += "#"
             if col < self.__height - 1:
                 rect += "\n"
-        return rect
+        return (rect)
