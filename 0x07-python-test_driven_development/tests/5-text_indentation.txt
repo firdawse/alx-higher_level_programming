@@ -1,0 +1,73 @@
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("start")
+    start
+    <BLANKLINE>
+
+
+::
+
+    >>> text_indentation("  hello.")
+    hello.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("    ")
+    <BLANKLINE>
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("Hello  ")
+    Hello
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("    hello.    it's me.")
+    hello.
+    <BLANKLINE>
+    it's me.
+    <BLANKLINE>
+
+
+::
+
+    >>> text_indentation("new-line\ndone.")
+    new-line
+    done.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("\n\n new lines.")
+    new lines.
+    <BLANKLINE>
+
+::
+    >>> text_indentation("A sneaky \nnew line.")
+    A sneaky 
+    new line.
+    <BLANKLINE>
+
+
+::
+
+    >>> text_indentation(1)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation({"1": 1, "2": 2})
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
