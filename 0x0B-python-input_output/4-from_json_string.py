@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""transform text to JSON"""
+"""returns json objects"""
 
 import json
 
