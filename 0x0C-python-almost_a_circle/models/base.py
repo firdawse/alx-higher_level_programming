@@ -52,3 +52,5 @@ class Base:
         inst.y = 0
         inst.update(**dictionary)
         return inst
+
+    
