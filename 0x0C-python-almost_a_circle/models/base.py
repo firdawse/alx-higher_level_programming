@@ -53,4 +53,19 @@ class Base:
         inst.update(**dictionary)
         return inst
 
-    
+    @classmethod
+    def load_from_file_csv(cls):
+        """deserializes CSV"""
+        filename = "{}.csv".format(cls.__name__)
+
+        if not os.path.exists(filename):
+            return []
+
+        objList = []
+        with open(filename, "r", encoding="utf-8") as f:
+            for line in f:
+                argums = line[:-1].split(",")
+                obj = cls(1, 1)
+                obj.update(*[int(x) for x in argums])
+                objList.append(obj)
+        return objList 
